@@ -1,85 +1,96 @@
-@media only screen and (max-device-width: 750px) {
-    .card {
-        margin: 0% 0 0 0;
-        width: 100%;
-    }
-    .container {
-        padding: 0.5em 0.5em;
-    }
-}
-@media only screen and (min-device-width: 750px) {
-    .card {
-        margin: 0% 40% 0 40%;
-        width: auto;
-    }
-    .container {
-        padding: 0.5em 2em;
-    }
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    text-align: center;
+.vertical-horizontal-center {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    min-height: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.card:hover {
-    box-shadow: 0 0.5em 2em 0 rgba(0,0,0,0.5);
+
+.i-block {
+    display: inline-block;
 }
-body {
-    margin: 0px 0px 0px 0px;
+
+.padding50 {
+    padding: 50px;
+}
+
+.min-width40 {
+    min-width: 40%;
+}
+
+.relative {
     position: relative;
 }
-.color {
-    background-color: rgba(5, 78, 35, 12);
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-#quote {
-    color: ghostwhite;
+
+.card:hover {
+     box-shadow: 0 0.5em 2em 0 rgba(0,0,0,0.5);
 }
-html {
-    background-color: gray;
-}
+
 .fadein {
-    -webkit-animation: fadein 1.5s linear;
-    animation: fadein 1.5s linear;
+
 }
-.fadeinSadHack {
-    -webkit-animation: fadeinSadHack 1.5s linear;
-    animation: fadeinSadHack 1.5s linear;
+
+.fadeOut {
+
 }
-@keyframes fadein {
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-@keyframes fadeinSadHack {
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadeinSadHack { /* Safari and Chrome */
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
+
+@media(max-width:320px) {
+    .i-block {
+    display: block;
+    width:90%;
     }
 }
 * {
     font-family: 'Roboto', sans-serif;
 }
+/*Dee's edit*/
+/*
+.vertical-horizontal-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.i-block {
+    display: inline-block;
+}
+
+.padding50 {
+    padding: 50px;
+}
+
+.min-width40 {
+    min-width: 40%;
+}
+
+.relative {
+    position: relative;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover {
+     box-shadow: 0 0.5em 2em 0 rgba(0,0,0,0.5);
+}
+
+.fadein {
+
+}
+
+.fadeOut {
+
+}
+
+@media(max-width:320px) {
+    .i-block {
+    display: block;
+    width:90%;
+    }
+}
+*/

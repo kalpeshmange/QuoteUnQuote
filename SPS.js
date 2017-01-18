@@ -243,7 +243,8 @@ function change() {
     var containerHeight = tempContainer[0].clientHeight;
 
     var resetHeight = (cardHeight-containerHeight)/2;
-
+ 
+  
     //Resentful devilish hack -- Not a fan
     tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
     //tempContainer[0].setAttribute("style", `padding-bottom: ${resetHeight}px`);
