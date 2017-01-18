@@ -13,6 +13,10 @@
     padding: 50px;
 }
 
+.min-width40 {
+    min-width: 40%;
+}
+
 .relative {
     position: relative;
 }
