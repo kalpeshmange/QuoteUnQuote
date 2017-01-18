@@ -243,15 +243,11 @@ function change() {
     // var containerHeight = tempContainer[0].clientHeight;
 
     // var resetHeight = (cardHeight-containerHeight)/2;
-
-<<<<<<< HEAD
     // //Resentful devilish hack -- Not a fan
     // tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
-=======
     //Resentful devilish hack -- Not a fan
     tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
     //tempContainer[0].setAttribute("style", `padding-bottom: ${resetHeight}px`);
->>>>>>> d6c9149b4e932512e850506f224294ee7ab1dc6b
 
     // //Sad CSS Hack for re-pplying styles to an element
     // tempContainer[0].classList.toggle('fadein');
