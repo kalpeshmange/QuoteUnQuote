@@ -246,7 +246,7 @@ function change() {
     // //Resentful devilish hack -- Not a fan
     // tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
     //Resentful devilish hack -- Not a fan
-    tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
+    // tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
     //tempContainer[0].setAttribute("style", `padding-bottom: ${resetHeight}px`);
 
     // //Sad CSS Hack for re-pplying styles to an element
