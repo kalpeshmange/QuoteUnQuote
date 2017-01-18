@@ -237,7 +237,6 @@ function change() {
     null;
 
     //Obtaining divs and heights to manipulate padding on runtime
-<<<<<<< HEAD
     var tempCard = document.getElementsByClassName('card');
     var cardHeight = tempCard[0].clientHeight;
     var tempContainer = document.getElementsByClassName('container');
@@ -245,24 +244,20 @@ function change() {
 
     var resetHeight = (cardHeight-containerHeight)/2;
  
-  
-=======
-    // var tempCard = document.getElementsByClassName('card');
-    // var cardHeight = tempCard[0].clientHeight;
-    // var tempContainer = document.getElementsByClassName('container');
-    // var containerHeight = tempContainer[0].clientHeight;
+    var tempCard = document.getElementsByClassName('card');
+    var cardHeight = tempCard[0].clientHeight;
+    var tempContainer = document.getElementsByClassName('container');
+    var containerHeight = tempContainer[0].clientHeight;
 
-    // var resetHeight = (cardHeight-containerHeight)/2;
-    // //Resentful devilish hack -- Not a fan
-    // tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
->>>>>>> 55981808813bee70446fa0381e6b10f50c352910
+    var resetHeight = (cardHeight-containerHeight)/2;
+   
     //Resentful devilish hack -- Not a fan
-    // tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
+    tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
     //tempContainer[0].setAttribute("style", `padding-bottom: ${resetHeight}px`);
 
-    // //Sad CSS Hack for re-pplying styles to an element
-    // tempContainer[0].classList.toggle('fadein');
-    // tempContainer[0].classList.toggle('fadeinSadHack');
+    //Sad CSS Hack for re-pplying styles to an element
+    tempContainer[0].classList.toggle('fadein');
+    tempContainer[0].classList.toggle('fadeinSadHack');
     //tempContainer[0].className = tempContainer[0].className.replace( /(?:^|\s)fadein(?!\S)/g , '' );
     //tempContainer[0].className += ' fadein';
 
