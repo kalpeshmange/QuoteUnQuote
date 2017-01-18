@@ -1,7 +1,7 @@
 @media only screen and (max-device-width: 750px) {
     .card {
         margin: 30% 0 0 0;
-        width: auto;
+        width: 100%;
     }
     .container {
         padding: 0.5em 0.5em;
@@ -10,7 +10,7 @@
 @media only screen and (min-device-width: 750px) {
     .card {
         margin: 10% 40% 0 40%;
-        max-width: 60%;
+        width: auto;
     }
     .container {
         padding: 0.5em 2em;
