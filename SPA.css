@@ -1,0 +1,38 @@
+@media only screen and (max-device-width: 750px) {
+    .card {
+        margin: 10% 0 0 0;
+        width: auto;
+    }
+    .container {
+        padding: 0.5em 0.5em;
+    }
+}
+@media only screen and (min-device-width: 750px) {
+    .card {
+        margin: 10% 40% 0 40%;
+        max-width: 60%;
+    }
+    .container {
+        padding: 0.5em 2em;
+    }
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 0.5em 2em 0 rgba(0,0,0,0.5);
+}
+body {
+    margin: 0px 0px 0px 0px;
+}
+.color {
+    background-color: rgba(5, 78, 35, 12);
+}
+#quote {
+    color: ghostwhite;
+}
+html {
+    background-color: gray;
+}
