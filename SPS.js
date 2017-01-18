@@ -228,9 +228,29 @@ var arrangeInAnArray = data.split("\n");
 
 function change() {
     
+    //Logic to fetch a random digit from 1 - 224
     var position = Math.floor(Math.random() * (224 - 1 + 1) + 1);
     
+    //Logic to push the quote from the array to the div, using the random number generated above
     arrangeInAnArray[position] !== undefined ?
     document.querySelector('div[id="quote"]').innerText = arrangeInAnArray[position] :
-    console.log(position);
+    null;
+
+    //Obtaining divs and heights to manipulate padding on runtime
+    var tempCard = document.getElementsByClassName('card');
+    var cardHeight = tempCard[0].clientHeight;
+    var tempContainer = document.getElementsByClassName('container');
+    var containerHeight = tempContainer[0].clientHeight;
+
+    var resetHeight = (cardHeight-containerHeight)/2;
+
+    //Resentful devilish hack -- Not a fan
+    tempContainer[0].setAttribute("style", `padding-top: ${resetHeight}px`);
+
+    //Sad CSS Hack for re-pplying styles to an element
+    tempContainer[0].classList.toggle('fadein');
+    tempContainer[0].classList.toggle('fadeinSadHack');
+    //tempContainer[0].className = tempContainer[0].className.replace( /(?:^|\s)fadein(?!\S)/g , '' );
+    //tempContainer[0].className += ' fadein';
+
 }
