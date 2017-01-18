@@ -37,3 +37,9 @@
 
 }
 
+@media(max-width:320px) {
+    .i-block {
+    display: block;
+    width:90%;
+    }
+}
